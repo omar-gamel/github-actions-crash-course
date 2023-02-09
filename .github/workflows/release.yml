@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build . -t omargamel/nest-app
-      - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password stdin
+      - run: echo "dckr_pat_XhVlxHv0jnOCnuE1U0BAmrYjigw" | docker login -u omargamel --password stdin
       - run: docker push omargamel/nest-app
